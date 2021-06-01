@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<ProxyEndpoint name="default">
+  <Description>Account and Transaction API Specification</Description>
+  <PreFlow name="PreFlow">
+    <Request/>
+    <Response/>
+  </PreFlow>
+  <Flows>
+    <Flow name="CreateAccountAccessConsents">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/account-access-consents&quot;) and (request.verb = &quot;POST&quot;)</Condition>
+      <Description>Create Account Access Consents</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountAccessConsentsConsentId">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/account-access-consents/{ConsentId}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Account Access Consents</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="DeleteAccountAccessConsentsConsentId">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/account-access-consents/{ConsentId}&quot;) and (request.verb = &quot;DELETE&quot;)</Condition>
+      <Description>Delete Account Access Consents</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccounts">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Accounts</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountId">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Accounts</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdBalances">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/balances&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Balances</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdBeneficiaries">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/beneficiaries&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Beneficiaries</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdDirectDebits">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/direct-debits&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Direct Debits</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdOffers">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/offers&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Offers</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdParty">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/party&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Party</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdProduct">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/product&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Products</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdScheduledPayments">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/scheduled-payments&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Scheduled Payments</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdStandingOrders">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/standing-orders&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Standing Orders</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdStatements">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/statements&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Statements</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdStatementsStatementId">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/statements/{StatementId}&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Statements</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdStatementsStatementIdFile">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/statements/{StatementId}/file&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Statements</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdStatementsStatementIdTransactions">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/statements/{StatementId}/transactions&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Transactions</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetAccountsAccountIdTransactions">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/accounts/{AccountId}/transactions&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Transactions</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetBalances">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/balances&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Balances</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetBeneficiaries">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/beneficiaries&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Beneficiaries</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetDirectDebits">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/direct-debits&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Direct Debits</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetOffers">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/offers&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Offers</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetParty">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/party&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Party</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetProducts">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/products&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Products</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetScheduledPayments">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/scheduled-payments&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Scheduled Payments</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetStandingOrders">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/standing-orders&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Standing Orders</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetStatements">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/statements&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Statements</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="GetTransactions">
+      <Condition>(proxy.pathsuffix MatchesPath &quot;/transactions&quot;) and (request.verb = &quot;GET&quot;)</Condition>
+      <Description>Get Transactions</Description>
+      <Request/>
+      <Response/>
+    </Flow>
+  </Flows>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPProxyConnection>
+    <BasePath>/open-banking/v3.0/aisp</BasePath>
+    <VirtualHost>default</VirtualHost>
+    <VirtualHost>secure</VirtualHost>
+  </HTTPProxyConnection>
+  <RouteRule name="default">
+    <TargetEndpoint>default</TargetEndpoint>
+  </RouteRule>
+</ProxyEndpoint>

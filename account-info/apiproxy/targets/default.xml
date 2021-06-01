@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<TargetEndpoint name="default">
+  <Description>Account and Transaction API Specification</Description>
+  <PreFlow name="PreFlow">
+    <Request/>
+    <Response/>
+  </PreFlow>
+  <Flows/>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPTargetConnection>
+    <!-- <URL>https://undefined/open-banking/v3.0/aisp</URL> -->
+    <URL>https://account-info-open-banking.herokuapp.com</URL>
+  </HTTPTargetConnection>
+</TargetEndpoint>
